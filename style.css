@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #000000, #121212);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+input {
+    padding: 0.7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #333333;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+input:focus {
+    background: #444444;
+}
+
+.progress-container {
+    margin: 1.5rem 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #333333;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem 0;
+    height: 20px;
+    box-shadow: inset 0 0 5px #000;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.goal-progress {
+    background: linear-gradient(135deg, #00ff9d, #00cc7a);
+    box-shadow: 0 0 10px #00ff9d;
+}
+
+.time-progress {
+    background: linear-gradient(135deg, #ff6b6b, #cc5555);
+    box-shadow: 0 0 10px #ff6b6b;
+}
+
+.progress-text {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.controls button.plus {
+    color: #00ff9d;
+}
+
+.controls button.minus {
+    color: #ff6b6b;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+}
+
+#startButton {
+    background: linear-gradient(135deg, #007acc, #005f99);
+    color: #ffffff;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#startButton:hover {
+    background: linear-gradient(135deg, #0099ff, #007acc);
+    box-shadow: 0 0 10px #0099ff;
+}
+
+#startButton:disabled {
+    background: #555555;
+    cursor: not-allowed;
+}
+
+canvas {
+    margin-top: 2rem;
+}
